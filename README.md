@@ -6,11 +6,11 @@ Versión inicial con base al curso *React JS + Redux + ES6 Completo ¡De cero a 
 
 ## Tabla de contenido
 
-- [Node.js, Npm y Yarn](#Node.js,-Npm-y-Yarn).
+- [NodeJs, Npm y Yarn](#NodeJs,-Npm-y-Yarn).
 - [Puntos fuertes de React](#Puntos-fuertes-de-React).
 - [Hola mundo en React](#Hola-mundo-en-React).
 
-## Node.js, Npm y Yarn
+## NodeJs, Npm y Yarn
 
 **Node.js y Npm**
 
