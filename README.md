@@ -9,6 +9,8 @@ Versión inicial con base al curso *React JS + Redux + ES6 Completo ¡De cero a 
 - [NodeJs, Npm y Yarn](#NodeJs,-Npm-y-Yarn).
 - [Puntos fuertes de React](#Puntos-fuertes-de-React).
 - [Hola mundo en React](#Hola-mundo-en-React).
+- [Creación de app react](#Creación-de-app-react).
+- [Creación de functional component](#Creación-de-functional-component).
 
 ## NodeJs, Npm y Yarn
 
