@@ -11,6 +11,7 @@ Versión inicial con base al curso *React JS + Redux + ES6 Completo ¡De cero a 
 - [Hola mundo en React](#Hola-mundo-en-React).
 - [Creación de app react](#Creación-de-app-react).
 - [Creación de functional component](#Creación-de-functional-component).
+- [ES6 Arrow Functions](#ES6-Arrow-Functions).
 
 ## NodeJs, Npm y Yarn
 
@@ -135,5 +136,60 @@ function App() {
 }
 
 export default App;
+
+```
+
+## ES6 Arrow Functions
+
+La expresión de función flecha o arrow functions tiene una sintaxis más corta que una expresión de función convencional y no vincula sus propios this, arguments, super, o new.target. Las funciones flecha siempre son anónimas. Estas funciones son funciones no relacionadas con métodos y no pueden ser usadas como constructores.
+
+**Ejemplo función convencional**
+
+```js
+
+// Se define una lista de marca de carros:
+var cars = {
+  'Ford',
+  'Toyota',
+  'Mazda',
+  'BMW'
+}
+
+// Función convencional que retorna la cantidad de carros almacenados en la lista cars.
+// La función no es anónima, ya que posee un nombre de función.
+// Para este ejemplo, no tiene parámetros de entrada.
+function mi_funcion_conv(){
+  return cars.length;
+}
+
+// Imprime en consola el valor que retorna la función convencional:
+// > 4
+console.log(mi_funcion_conv());
+
+
+
+```
+
+**Ejemplo de Arrow Functions**
+
+```js
+
+// Se define una lista de marca de carros:
+var cars = {
+  'Ford',
+  'Toyota',
+  'Mazda',
+  'BMW'
+}
+
+// La función se define en una constante, por lo tanto es anónima, ya que la función no está definida.
+// Para este ejemplo, no tiene parámetros de entrada.
+// Si se trabaja en una única linea, no se requiere poner la palabra clave return.
+// Si se requiere poner más de una linea en la función, se debe usar las llaves {}.
+const mi_funcion = () => (cars.length);
+
+// Imprime en consola el valor que retorna la función:
+// > 4
+console.log(mi_funcion());
 
 ```
