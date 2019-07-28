@@ -12,6 +12,7 @@ Versión inicial con base al curso *React JS + Redux + ES6 Completo ¡De cero a 
 - [Creación de app react](#Creación-de-app-react).
 - [Creación de functional component](#Creación-de-functional-component).
 - [ES6 Arrow Functions](#ES6-Arrow-Functions).
+- [JavaScript Debugging](#JavaScript-Debugging).
 
 ## NodeJs, Npm y Yarn
 
@@ -193,3 +194,47 @@ const mi_funcion = () => (cars.length);
 console.log(mi_funcion());
 
 ```
+
+## JavaScript Debugging
+
+**console.log()**
+
+Si su navegador admite la depuración, puede usar el método console.log() para mostrar los valores de JavaScript en la ventana del depurador:
+
+```js
+
+import React from 'react';
+
+const Location = (props) => {
+  // Imprime en la consola el valor del parámetro de entrada props:
+  console.log(props);
+
+  return <div><h1>{props.city}</h1></div>
+}
+```
+
+**Configurando Breakpoints**
+
+En la ventana del depurador, puede establecer puntos de interrupción en el código JavaScript. En cada punto de interrupción, JavaScript dejará de ejecutarse y le permitirá examinar los valores de JavaScript. Después de examinar los valores, puede reanudar la ejecución del código (normalmente con un botón de reproducción).
+
+**Palabra clave debugger**
+
+La palabra clave `debugger` detiene la ejecución de JavaScript y llama (si está disponible) a la función de depuración. Esto tiene la misma función que establecer un punto de interrupción en el depurador. Si no hay depuración disponible, la declaración del depurador no tiene efecto. Con el depurador encendido, este código dejará de ejecutarse antes de ejecutar la tercera línea:
+
+```js
+
+import React from 'react';
+
+const Location = (props) => {
+  // Imprime en la consola el valor del parámetro de entrada props:
+  console.log(props);
+  // Establece un punto de parada:
+  debugger;
+
+  return <div><h1>{props.city}</h1></div>
+}
+
+export default Location;
+
+```
+
