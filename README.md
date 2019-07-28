@@ -51,6 +51,8 @@ Principales puntos fuertes:
 
 A nivel de arquitectura, React representa la **Vista** en el patrón de diseño [MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador) y también, suele ser utilizado sobre Single Page Application.
 
+Recomendación: [Ver video explicativo sobre como funciona React](https://youtu.be/lWQ69WX7-hA).
+
 ## Hola mundo en React
 
 ```js
@@ -141,7 +143,7 @@ export default App;
 
 ## ES6 Arrow Functions
 
-La expresión de función flecha o arrow functions tiene una sintaxis más corta que una expresión de función convencional y no vincula sus propios this, arguments, super, o new.target. Las funciones flecha siempre son anónimas. Estas funciones son funciones no relacionadas con métodos y no pueden ser usadas como constructores.
+La expresión de función flecha o arrow functions tiene una sintaxis más corta que una expresión de función convencional y no vincula sus propios this, arguments, super, o new.target. Las funciones flecha siempre son anónimas. Estas funciones son funciones no relacionadas con métodos y no pueden ser usadas como constructores ([fuente](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Funciones/Arrow_functions)). 
 
 **Ejemplo función convencional**
 
@@ -165,8 +167,6 @@ function mi_funcion_conv(){
 // Imprime en consola el valor que retorna la función convencional:
 // > 4
 console.log(mi_funcion_conv());
-
-
 
 ```
 
