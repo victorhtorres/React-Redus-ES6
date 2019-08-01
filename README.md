@@ -13,6 +13,7 @@ Versión inicial con base al curso *React JS + Redux + ES6 Completo ¡De cero a 
 - [Creación de functional component](#Creación-de-functional-component).
 - [ES6 Arrow Functions](#ES6-Arrow-Functions).
 - [JavaScript Debugging](#JavaScript-Debugging).
+- [Object Destructuring](#Object-Destructuring).
 
 ## NodeJs, Npm y Yarn
 
@@ -237,4 +238,103 @@ const Location = (props) => {
 export default Location;
 
 ```
+
+## Object Destructuring
+
+El destructuring es una técnica que nos permite asignar valores a variables desde un objeto más complejo o desde arreglos con varios elementos:
+
+Ejemplos:
+
+```js
+
+// Un objeto con dos propiedades
+const obj = {name: 'Emiliano', nick: 'Oke'}
+
+// Destructuring:
+const {name: myName, nick: myNick} = obj
+
+// myName = 'Emiliano'
+// myNick = 'Oke'
+
+```
+
+```js
+
+// Un objeto con dos propiedades
+const obj = {name: 'Emiliano', nick: 'Oke'};
+
+// Destructuring:
+const {name, nick} = obj;
+
+// name => 'Emiliano'
+// nick => 'Oke'
+
+```
+
+```js
+
+const myArray = ['a', 'b'];
+
+// Destructuring
+const [x, y] = myArray
+
+// x => a
+// y => b
+
+```
+Cuando se hace destructuring sobre un objeto, no es necesario tomar todas las propiedades de dicho objeto, sino que puede ser solo las que se requieran:
+
+```js
+
+const source = {x: 7, y: 3};
+
+// Destructuring:
+const {x} = source;
+
+// x => 7
+// y => Error de referencia.
+
+```
+
+Se puede establecer valores por defecto:
+
+```js
+
+// Destructuring el cual se está asignando un objeto vacío, pero una de las propiedades tiene un valor por defecto:
+const {x, y = 1} = obj
+
+// x => undefined
+// y => 1
+
+```
+
+El destructuring de arrays se puede utilizar "elision". De esa forma se puede omitir uno o más elementos de determinada posición del array:
+
+```js
+
+// los valores 'a' y 'b' quedan sin asignación:
+const [, , x, y] = ['a', 'b', 'c', 'd'];
+
+// x => 'c'
+// y => 'd'
+
+```
+
+También se puede utilizar el "rest operator" en conjunción con destructuring para extraer los elementos remanentes,los elementos que queden, después de tomar los primeros identificados:
+
+```js
+
+// el rest operator son los tres puntos ...
+const [x, ...y] = ['a', 'b', 'c'];
+
+// x => 'a'
+// y => ['b', 'c']
+
+```
+
+Además:
+
+- El destructuring puede utilizarse para asignaciones con `const`, `let` y `var`.
+- El destructuring se puede anidar, de manera que se pueda hacer destructuring de objetos con estructuras anidadas o de arrays que tienen arrays como elementos.
+
 
