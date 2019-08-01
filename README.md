@@ -337,4 +337,4 @@ Además:
 - El destructuring puede utilizarse para asignaciones con `const`, `let` y `var`.
 - El destructuring se puede anidar, de manera que se pueda hacer destructuring de objetos con estructuras anidadas o de arrays que tienen arrays como elementos.
 
-
+Más ejemplo de destructuring dando clic [aquí](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment).
